@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Phim Chuyên Nghiệp</title>
+
     <style>
-        /* Toàn bộ trang */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -13,7 +13,6 @@
             color: white;
         }
 
-        /* Thanh Menu trên cùng (Header) */
         header {
             background-color: #000;
             padding: 10px 20px;
@@ -32,7 +31,6 @@
             text-decoration: none;
         }
 
-        /* Ô tìm kiếm */
         .search-box {
             display: flex;
             flex-grow: 1;
@@ -56,7 +54,6 @@
             cursor: pointer;
         }
 
-        /* Danh mục Menu */
         nav {
             background-color: #333;
             padding: 10px;
@@ -76,7 +73,6 @@
             color: #ff4d4d;
         }
 
-        /* Lưới hiển thị phim */
         .container {
             padding: 20px;
         }
@@ -92,6 +88,11 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             gap: 15px;
+        }
+
+        .movie-grid a {
+            text-decoration: none;
+            color: white;
         }
 
         .movie-card {
@@ -133,42 +134,48 @@
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <a href="#" class="logo">NamĐẹpTrai</a>
-        <div class="search-box">
-            <input type="text" placeholder="Tìm tên phim, diễn viên...">
-            <button>Tìm</button>
-        </div>
-    </header>
+<header>
+    <a href="#" class="logo">NamĐẹpTrai</a>
+    <div class="search-box">
+        <input type="text" placeholder="Tìm tên phim, diễn viên...">
+        <button>Tìm</button>
+    </div>
+</header>
 
-    <nav>
-        <a href="#">Trang Chủ</a>
-        <a href="#">Phim Lẻ</a>
-        <a href="#">Phim Bộ</a>
-        <a href="#">Chiếu Rạp</a>
-        <a href="#">Hoạt Hình</a>
-    </nav>
+<nav>
+    <a href="javascript:void(0)">Trang Chủ</a>
+    <a href="javascript:void(0)">Phim Lẻ</a>
+    <a href="javascript:void(0)">Phim Bộ</a>
+    <a href="javascript:void(0)">Chiếu Rạp</a>
+    <a href="javascript:void(0)">Hoạt Hình</a>
+</nav>
 
-    <div class="container">
-        <div class="section-title">PHIM MỚI CẬP NHẬT</div>
-        
-        <div class="movie-grid">
+<div class="container">
+    <div class="section-title">PHIM MỚI CẬP NHẬT</div>
+
+    <div class="movie-grid">
+
+        <a href="watch.html">
             <div class="movie-card">
                 <span class="quality">FHD - Vietsub</span>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5Ge8mR6-6a1JrLEc7I3ga8hRfc48ssqne0v0-RasUouRUjX7nuTNA8c&s=ANd9GcSi5Ge8mR6-6a1JrLEc7I3ga8hRfc48ssqne0v0-RasUouRUjX7nuTNA8c150x200" alt="Phim 1">
+                <img src="poster1.jpg" alt="Phim 1">
                 <h3>Đả nữ báo thù</h3>
             </div>
+        </a>
 
+        <a href="watch.html">
             <div class="movie-card">
                 <span class="quality">Trailer</span>
-                <img src="https://via.placeholder.com/150x200" alt="Phim 2">
-                <h3>Tên Phim 2</h3>
+                <img src="poster2.jpg" alt="Phim 2">
+                <h3>Siêu trăn khổng lồ</h3>
             </div>
-            
-            </div>
+        </a>
+
     </div>
+</div>
 
 </body>
 </html>
